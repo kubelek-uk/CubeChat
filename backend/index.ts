@@ -125,7 +125,7 @@ app.get('/coins/:data/:currency/:coin', async (req, res) => {
 })
     
     
-Moralis.start({ appId: "siiSmww5Kl7aF2BaZBCbfxSJTehhffnm0eSMjIok", serverUrl: "https://0useoa5rc0zj.usemoralis.com:2053/server" })
+Moralis.start({ appId: "", serverUrl: "https://0useoa5rc0zj.usemoralis.com:2053/server" })
 
 const getNfts = async (walletAddress: string) => {
     return await Moralis.Web3API.account.getNFTs({ chain: 'eth', address: walletAddress })
